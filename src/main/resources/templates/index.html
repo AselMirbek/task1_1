@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+            color: #243047;
+        }
+        .container {
+            max-width: 900px;
+            margin: 100px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px #00000012;
+            text-align: center;
+        }
+        h1 { color: #243b65; }
+        p { color: #64748b; font-size: 18px; }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+        .button:hover { background: #1d4ed8; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Task Management System</h1>
+
+    <p>Добро пожаловать в систему управления задачами!</p>
+
+    <p>Создавайте задачи, устанавливайте сроки и отслеживайте их выполнение.</p>
+
+    <a class="button" th:href="@{/tasks}">
+        Перейти к задачам
+    </a>
+</div>
+</body>
+</html>
